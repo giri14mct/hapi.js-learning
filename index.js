@@ -34,7 +34,6 @@ const init = async () => {
     method: "PUT",
     path: "/movies/{id}",
     handler: (req, h) => {
-      console.log(req.params.id, "h");
       return `${req.params.id} Movie Updated`;
     },
   });
